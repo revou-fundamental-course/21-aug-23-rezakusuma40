@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoAll | World's Best Programming School</title>
+    <link rel="icon" type="image/x-icon" href="assets/RevoUgreen-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="#home-anchor">
+                <img src="assets/RevoUgreen-icon.png" alt="RevoU logo"></img>
+            </a>
+        </section>
+        <nav class="navbtns">
+            <a href="#home-anchor" class="navbtn">Home</a>
+            <a href="#profile-anchor" class="navbtn">Our Profile</a>
+            <a href="#achievement-anchor" class="navbtn">Achievement</a>
+            <a href="#message-anchor" class="navbtn">Message Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class='anchor' id="home-anchor"></div>
+        <section class="banner">
+            <h1 id="name">Welcome to RevoAll!</h1>
+        </section>
+        <section>
+            <p class="headline">
+                At our school, we're all about turning dreams into code! 🚀<br>
+                We don't care where you're coming from – whether you're
+                a tech wizard or a complete newbie <br>Our mission? To mold you
+                into a coding superhero! 💻🦸 <br>With our squad of pro mentors, 
+                we're not just talking about your dream career~ <br> We're making 
+                it happen! <br>Ready to join the league of extraordinary programmers?
+                <br>Come geek out with us!"😎👩‍💻👨‍💻
+            </p>
+        </section>
+        <div class='anchor' id="profile-anchor"></div>
+        <section>
+            <h2>Who Are We?</h2>
+            <h3>Introducing RevoAll – where coding is an adventure, not a chore! </h3>
+            <div id="flex-vmicon">
+                <div id="visionMission">
+                    <h3>VISION</h3>
+                    <p>Our vision is to lead in revolutionizing coding education worldwide, 
+                        fostering confident and creative coders who shape the digital future.</p>
+                    <h3>MISSION</h3>
+                    <p>At RevoAll, our mission is to provide a transformative coding education experience. 
+                        We are dedicated to simplifying the intricacies of coding, boosting the confidence 
+                        of learners, and fostering their creative potential. We welcome individuals from 
+                        diverse backgrounds into our inclusive community, offering a supportive environment 
+                        that celebrates differences. By combining expert guidance, engaging learning 
+                        experiences, and a sense of camaraderie, our goal is to equip our students with the 
+                        skills and mindset required to excel in the ever-evolving world of technology. Join 
+                        us on this journey, where learning to code becomes an enjoyable adventure, and 
+                        together, we unlock the limitless possibilities of the digital realm. 💻🌐🚀🌟
+                    </p>
+                </div>
+                <div id="icons">
+                    <h2>Our Experienced Teachers</h2>
+                    <div class="teachers">
+                        <div class="teacher">
+                            <img src="assets/chatgpt.png" alt="ChatGPT logo"></img>
+                            <span>ChatGPT</span>
+                            <span>Principal</span>
+                        </div>
+                        <div class="teacher">
+                            <img src="assets/bard_bgblack.png" alt="Bard logo"></img>
+                            <span>Bard</span>
+                            <span>Science Teacher</span>
+                        </div>
+                        <div class="teacher">
+                            <img src="assets/midjourney.jpeg" alt="MidJourney logo"></img>
+                            <span>MidJourney</span>
+                            <span>Art Teacher</span>
+                        </div>
+                    </div>
+                    <h2><br><br>Our Alumni work at</h2>
+                    <div class="companies">
+                        <img src="assets/meta-icon.png" class="company" alt="Meta logo"></img>
+                        <img src="assets/apple-icon.png" class="company" alt="Apple logo"></img>
+                        <img src="assets/netflix-icon.png" class="company" alt="Netflix logo"></img>
+                        <img src="assets/google-icon.png" class="company" alt="Google logo"></img>
+                        <img src="assets/amazon-icon.png" class="company" alt="Amazon logo"></img>
+                    </div>
+                    <h3>and other 5000+ companies worldwide</h3>
+                </div>
+            </div>
+        </section>
+        <div class='anchor' id="achievement-anchor"></div>
+        <section>
+            <h2>Our Achievements</h2>
+            <div class="achievements">
+                <div id="flex-achievements">
+                    <div class="for_border">
+                        <p class="achieve-num">#1</p>
+                        <p class="achieve-text">Coding school in the world</p>
+                    </div>
+                    <div class="for_border">
+                        <p class="achieve-num">1Million+</p>
+                        <p class="achieve-text">Peers to network and learn with</p>
+                    </div>
+                    <div class="for_border">
+                        <p class="achieve-num">9000+</p>
+                        <p class="achieve-text">Alumni work within 1 year from graduation</p>
+                    </div>
+                    <div class="for_border">
+                        <p class="achieve-num">$200,000</p>
+                        <p class="achieve-text">Average yealy salary of our alumni</p>
+                    </div>
+                    <div>
+                        <p class="achieve-num">97%</p>
+                        <p class="achieve-text">Program completion rate</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bright_area">
+                <h3>Enroll now and become part of our family!</h3>
+                <div id="flex-slideshow">
+                    <button class="slider" id="previous" onclick="slider(-1)"><</button>
+                    <img src="assets/alumni1.jpg" alt="alumni1" class="alumni-img"></img>
+                    <img src="assets/alumni2.jpg" alt="alumni2" class="alumni-img" style="display: none;"></img>
+                    <img src="assets/alumni3.jpg" alt="alumni3" class="alumni-img" style="display: none;"></img>    
+                    <button class="slider" id="next" onclick="slider(1)">></button>
+                </div>
+            </div>
+        </section>
+        <div class='anchor' id="message-anchor"></div>
+        <section>
+            <h2>Still have questions? Message Us!</h2>
+            <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                <label for="name">Name</label>
+                <input type="text" name="message-name" id="name-input" placeholder="Enter your name" ><br>
+                <div class="placeholder"></div>
+                <div class="error_input_alert" id="alert-name"></div><br>
+                <label for="date">Date of Birth</label>
+                <input type="date" name="message-date" id="date-input"><br>
+                <div class="placeholder"></div>
+                <div class="error_input_alert" id="alert-date"></div><br>
+                <label for="gender">Gender</label>
+                <div class="genderBox">
+                    <input type="radio" name="message-gender" id="male" value="Male">Male
+                    <input type="radio" name="message-gender" id="female" value="Female">Female<br>
+                </div>
+                <div class="placeholder"></div>
+                <div class="error_input_alert" id="alert-gender"></div><br>
+                <label for="message">Message</label>
+                <textarea rows="4" cols="4" name="message-message" placeholder="Enter message" ></textarea>
+                <div class="placeholder"></div>
+                <div class="error_input_alert" id="alert-message"></div><br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+            <div id="submitted_data" style="display: none;">
+                <div class="submitted_input">
+                    <p>Name: <span id="submitted-name"></span></p>
+                    <p>Birth date: <span id="submitted-date"></span></p>
+                    <p>Gender: <span id="submitted-gender"></span></p>
+                    <p>Message: <span id="submitted-message"></span></p>
+                </div>
+                <button id="resubmit" onclick="return swapDisplay()">Send other message</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <br>
+        <p>© 2023 PT Revolusi Adi Kusuma</p>
+        <p>All Rights Reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

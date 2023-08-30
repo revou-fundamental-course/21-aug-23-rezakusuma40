@@ -1,0 +1,519 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+html {
+    background-color: #343837;
+}
+
+header {
+    background-color:#1f2221;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+}
+
+a img {
+    width: 34px;
+    height: 34px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.navbtns {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 0;
+}
+
+.navbtn {
+    text-decoration: none;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbtn:hover {
+    background-color: rgb(71, 144, 147);
+}
+
+.anchor {
+    height: 38px;
+}
+
+.banner {
+    background: url("../assets/home-school.jpeg");
+    height: 300px;
+    background-size: cover;
+    background-position: 0% 25%;
+}
+
+h1,h1 > span {
+    padding: 8px 14px;
+    font-size: xx-large;
+    color: #fff;
+    text-shadow: 
+    2px 2px 1px darkgrey;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.headline {
+    background: linear-gradient(90deg, #2a2d2c, #788a84, #2a2d2c);
+    font-size: 24px;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0px 30px 0px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#flex-vmicon {
+    width: 60%;
+    margin: auto;
+    margin-top: 38px;
+    display: flex;
+}
+
+#visionMission {
+    width: 50%;
+    border-radius: 20px;
+    padding:20px;
+    background-color: rgb(71, 144, 147);
+}
+
+#visionMission>h3 {
+    text-align: center;
+    margin: 12px;
+    line-height: 1.6;
+}
+
+#visionMission>p {
+    text-align: justify;
+    margin: 12px;
+    line-height: 1.6;
+}
+
+#icons {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#icons>* {
+    align-self: center;
+}
+
+.teachers,.companies {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.teacher {
+    margin-inline: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.companies img {
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    object-position: center;
+    margin: 0px 22px 18px;
+    text-align: center;
+}
+
+.achievements {
+    width: auto;
+    background-color: seagreen;
+    height: 150px;
+    margin-top: 38px;
+}
+
+#flex-achievements {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin-inline: auto;
+}
+
+#flex-achievements div {
+    height: 60%;
+    width: 20%;
+    align-self: center;
+}
+
+.for_border {
+    border-right: 2px solid lightseagreen;
+}
+
+#flex-achievements p {
+    text-align: center;
+    /* color: black; */
+}
+
+.achieve-num {
+    margin: 4px 26px 4px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.achieve-text {
+    margin: 4px 26px 4px;
+    font-size: 18px;
+}
+
+#bright_area {
+    background-color: #efdcd5;
+}
+
+#flex-slideshow {
+    width: fit-content;
+    display: flex;
+    align-content: space-between;
+    margin-inline: auto;
+}
+
+#flex-slideshow > * {
+    align-self: center;
+}
+
+#bright_area h3 {
+    padding: 30px 0px 0px;
+    color: black;
+}
+
+#bright_area img {
+    width: 1250px;
+    height: 640px;
+    display: block;
+    margin: 30px 40px;
+    border-radius: 20px;
+}
+
+.slider {
+    height: fit-content;
+    background: none;
+    border: none;
+    font-size: 60px;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.slider:hover {
+    color: white;
+    background-color: rgba(0,0,0,.2);
+}
+
+#previous {
+    left: 40px;
+}
+
+#next {
+    right: 40px;
+}
+
+.message-form {
+    position: relative;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.message-form > label {
+    min-height: 16px;
+    width: 25%;
+    margin-bottom: 6px;
+    padding-top: 6px;
+}
+
+.message-form > input,.message-form > button {
+    min-height: 32px;
+    max-height: 32px;
+    width: 75%;
+    margin-bottom: 6px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    color: #343837;
+    padding: 6px 10px;
+}
+
+.genderBox {
+    width: 75%;
+    margin: 6px 0;
+}
+
+#male {
+    cursor: pointer;
+}
+
+#female {
+    cursor: pointer;
+    margin-left: 24px;
+}
+
+textarea {
+    min-height: 100px;
+    width: 75%;
+    margin-bottom: 6px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    color: #343837;
+    padding: 6px 10px;
+    resize: vertical;
+}
+
+.placeholder {
+    min-height: 18px;
+    max-height: 18px;
+    width: 25%;
+}
+
+.error_input_alert {
+    min-height: 18px;
+    max-height: 18px;
+    width: 75%;
+    color: red;
+}
+
+#submit,#resubmit {
+    width: 400px;
+    height: 30px;
+    background: rgb(71, 144, 147);
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover,#resubmit:hover {
+    background: rgb(84, 169, 172);
+}
+
+#submit:active{
+    background: rgb(84, 169, 172);
+    transform: translateY(1px);
+}
+
+#resubmit:active {
+    background: rgb(84, 169, 172);
+    transform: translate(-50%, 1px);
+}
+
+.submitted_input,#resubmit {
+    position: relative;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0%);
+    width: 400px;
+    margin-bottom: 24px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 6px 10px;
+    resize: vertical;
+}
+
+.submitted_input {
+    background: #fff;
+}
+
+.submitted_input * {
+    color: #343837;
+}
+
+footer {
+    background-color: #343837;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1510px) {
+    h1,h1 > span {
+        font-size: x-large;
+    }
+
+    #flex-vmicon {
+        width: 75%;
+    }
+
+    #bright_area img {
+        width: 1062px;
+        height: 544px;
+        margin: 25px 30px;
+    }
+    
+    .slider {
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    h1,h1 > span {
+        font-size: larger;
+    }
+
+    .headline {
+        font-size: 18px;
+    }
+    
+    #flex-vmicon {
+        width: 90%;
+    }
+
+    #visionMission>h3 {
+        font-size: 18px;
+        margin: 10px;
+        line-height: 1.4;
+    }
+
+    #visionMission>p {
+        font-size: 12px;
+        margin: 10px;
+        line-height: 1.4;
+    }
+
+    .teacher img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 18px;
+    }
+    
+    .companies img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .achieve-num {
+        font-size: 28px;
+    }
+
+    .achieve-text {
+        font-size: 14px;
+    }
+
+    #bright_area img {
+        width: 625px;
+        height: 320px;
+        margin: 20px 20px;
+    }
+    
+    .slider {
+        font-size: 25px;
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    h1,h1 > span {
+        font-size: large;
+    }
+
+    .headline {
+        font-size: 12px;
+    }
+
+    #flex-vmicon {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    #visionMission {
+        width: 100%;
+    }
+
+    #icons {
+        width: 100%;
+    }
+
+    .achievements {
+        height: fit-content;
+    }
+
+    #flex-achievements {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+    }
+    
+    #flex-achievements div {
+        height: fit-content;
+        width: 100%;
+        align-self: center;
+        border: none;
+    }
+
+    .achieve-num {
+        font-size: 16px;
+    }
+
+    .achieve-text {
+        font-size: 10px;
+    }
+
+    #bright_area img {
+        width: 375px;
+        height: 192px;
+        margin: 15px 10px;
+    }
+    
+    .slider {
+        font-size: 20px;
+        padding: 4px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1,h1 > span {
+        font-size: medium;
+    }
+
+    .navbtn {
+        font-size: 12px;
+    }
+    
+    .headline {
+        font-size: 10px;
+    }
+}
